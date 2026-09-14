@@ -1,16 +1,21 @@
 package com.unida.ejercicio4;
+
 /**
  *
- * @author Laboratorio
+ * @author AdrixnP1nt
  */
 public class Ejercicio4 {
 
     public static void main(String[] args) {
-        Coche coche1 = new Coche("Porsche", "911", 2001);
-        coche1.MostrarCoche("Marca");
+        Coche Coche1 = new Coche();
+        System.out.println("Parametros Vacios.");
+        Coche1.MostrarInfo();
+        Coche1.MostrarInfo("Marca:");
         
-        Coche coche2 = new Coche("Porsche", "911", 1999);
-        coche2.MostrarCoche();
-        
+        System.out.println("\nParametros cargados.");
+        Coche Coche2 = new Coche("Lamborghini", "Veneno", 2013);
+        Coche2.MostrarInfo();
+        System.out.println("\nSolo la marca.");
+        Coche2.MostrarInfo("Marca");
     }
 }

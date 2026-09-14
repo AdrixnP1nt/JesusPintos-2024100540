@@ -1,24 +1,24 @@
 package com.unida.ejercicio4;
-
 /**
  *
- * @author Laboratorio
+ * @author AdrixnP1nt
  */
 public class Coche {
+
     private String Marca;
     private String Modelo;
-    private int Año;
-    
-    public Coche(){
-        this.Marca = "Deconocido";
+    private int año;
+
+    public Coche() {
+        this.Marca = "Desconocido";
         this.Modelo = "Desconocido";
-        this.Año = 2000;
+        this.año = 2000;
     }
-    
-    public Coche(String Marca, String Modelo, int Año){
+
+    public Coche(String Marca, String Modelo, int año) {
         this.Marca = Marca;
         this.Modelo = Modelo;
-        this.Año = Año;
+        this.año = año;
     }
 
     public String getMarca() {
@@ -38,32 +38,22 @@ public class Coche {
     }
 
     public int getAño() {
-        return Año;
+        return año;
     }
 
-    public void setAño(int Año) {
-        this.Año = Año;
+    public void setAño(int año) {
+        this.año = año;
     }
+
     
-    public void MostrarCoche(){
-        System.out.println("Marca: " + Marca + "\nModelo: " + Modelo + "\nAño: " + Año);
+    public void MostrarInfo(){
+        System.out.println("Marca:  " + Marca + "\nModelo: " + Modelo + "\nAño: " + año);
     }
-    public void MostrarCoche(String tipoInfo){
-        if(tipoInfo.equals("Marca")){
+    public void MostrarInfo(String tipoInfo){
+        if(tipoInfo.equals("marca")){
             System.out.println("Marca: " + Marca);
-        }else if(tipoInfo.equals("marca")){
+        }else if(tipoInfo.equals("Marca")){
             System.out.println("Marca: " + Marca);
-        }else if(tipoInfo.equals("Modelo")){
-            System.out.println("Modelo: " + Modelo);
-        }else if(tipoInfo.equals("modelo")){
-            System.out.println("Modelo: " + Modelo);
-        }else if(tipoInfo.equals("Año")){
-            System.out.println("Año: " + Año);
-        }else if(tipoInfo.equals("año")){
-            System.out.println("Año: " + Año);
         }
-        
     }
-    
-    
 }

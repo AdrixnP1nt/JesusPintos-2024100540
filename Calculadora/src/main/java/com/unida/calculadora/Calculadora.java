@@ -1,25 +1,16 @@
 package com.unida.calculadora;
-
+import static java.lang.Math.*;
 /**
  *
- * @author laboratorioasu
+ * @author AdrixnP1nt
  */
 public class Calculadora {
-    public int sumar(int a, int b){
-        return a + b;
-    }
-    public int sumar(int a, int b, int c){
-        return a + b + c;
-    }
-    public double sumar (double a, double b){
-        return a + b;
-    }
 
     public static void main(String[] args) {
-        Calculadora calc = new Calculadora();
-        
-        System.out.println("Suma de dos enteros: " + calc.sumar(1,3));
-        System.out.println("Suma de tres enteros: " + calc.sumar(5, 3, 1));
-        System.out.println("Suma de dos doubles: " + calc.sumar(12.4, 123.4));
+        double resultado = sqrt(25); //sqrt es para raiz
+        System.out.println("Raiz cuadrada de 25: " + resultado);
+        double ValorPi = PI;
+        System.out.println("Valor de pi: " + ValorPi);
     }
+    
 }
