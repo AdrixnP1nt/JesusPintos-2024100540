@@ -25,6 +25,7 @@ public class PracticaExamen {
         System.out.println("ingrese los dos numeros a operar:");
         a = Entrada.nextInt();
         b = Entrada.nextInt();
+        
         switch (opcion) {
             case 1:
                 Calcu.setNumero1(a);
